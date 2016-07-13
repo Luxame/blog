@@ -6,14 +6,14 @@
 title: Hexo
 subtitle:
 description:
-author: John Doe
-language:
+author: ZWL
+language: zh-tw
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: https://luxame.github.io/blog/
+root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -67,5 +67,6 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type:
+deploy: https://github.com/Luxame/blog.git
+  type:git
+  branch:gh-pages
