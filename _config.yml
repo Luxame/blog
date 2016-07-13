@@ -68,5 +68,5 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: https://github.com/Luxame/blog.git
-  type:git
-  branch:gh-pages
+type: git
+branch: gh-pages
