@@ -32,7 +32,7 @@ page:
   tags: 標籤
 
 footer:
-  powered: "由 %s 強力驅動"
+  powered: "由 %s 提供"
   theme: 主題
 
 
@@ -64,9 +64,9 @@ cheers:
   nice: 好
   good: 很好
   great: 非常好
-  excellent: 非常屌
+  excellent: 優秀 <(_ _)>
 
-keep_on: 繼續努力。
+keep_on: 繼續努力 _(:312)_
 
 symbol:
   comma: '， '
