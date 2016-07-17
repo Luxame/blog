@@ -85,11 +85,11 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="ZWL's 紀錄天地">
 <meta property="og:url" content="https://luxame.github.io/blog/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="ZWL's 紀錄天地">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="ZWL's 紀錄天地">
 
 
 
@@ -112,7 +112,7 @@
 
   <link rel="canonical" href="https://luxame.github.io/blog/"/>
 
-  <title> Hexo </title>
+  <title> ZWL's 紀錄天地 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
@@ -145,7 +145,7 @@
   <div class="custom-logo-site-title">
     <a href="/blog/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Hexo</span>
+      <span class="site-title">ZWL's 紀錄天地</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -186,16 +186,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/blog/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            標籤
-          </a>
-        </li>
-      
 
       
     </ul>
@@ -213,6 +203,128 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/blog/20160717/" itemprop="url">
+                  使用 Hexo 搭配 Github pages 做一個 Blog
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-07-17T11:25:42+08:00" content="2016-07-17">
+              2016-07-17
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p>Hexo 是基於 Node.js 網誌框架，文章的寫作只要使用 Markdown 語法，Hexo 就能解析轉成靜態頁面，且有許有多主題套件可以做更換。</p>
+<h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><p>安裝 Hexo 前，需有以下軟體：</p>
+<ul>
+<li>Node.js</li>
+<li>Git</li>
+</ul>
+<p>有上述軟體時，使用 NPM 安裝 Hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<p>Hexo 安裝完成後，使用 Hexo 生成 blog</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ hexo init folder-name</div><div class="line"></div><div class="line">// 建置指定資料夾，和所需檔案</div><div class="line"></div><div class="line">$ cd folder-name</div><div class="line"></div><div class="line">// 進入指定資料夾</div><div class="line"></div><div class="line">$ hexo s</div><div class="line"></div><div class="line">$ hexo server</div><div class="line"></div><div class="line">// 在本地端開啟預覽查看</div></pre></td></tr></table></figure>
+<h2 id="環境設定"><a href="#環境設定" class="headerlink" title="環境設定"></a>環境設定</h2><p>Hexo 的環境設定大多都由 <code>_config.yml</code> 這一個檔案做修改，不過需要注意的是在 Hexo 生成的資料</p>
+<p>夾中 <code>/themes/</code> 底下也有 <code>_config.yml</code> ，一個是操作整個網誌的環境設定，另外一個則是操作主題</p>
+<p>的設定，在設定時需要注意</p>
+<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><p>再把本地中的 Hexo 檔案部署到 Github pages 上，須先在網誌的 <code>_config.yml</code> 上做設定，並安裝相關部署套件</p>
+<ul>
+<li>安裝套件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<ul>
+<li><code>_config.yml</code> 設定</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line"></div><div class="line">  type: git</div><div class="line"></div><div class="line">  // 要使用的部署類型</div><div class="line"></div><div class="line">  repo: &lt;repository url&gt;</div><div class="line"></div><div class="line">  // 要部署的專案位置</div><div class="line"></div><div class="line">  branch: [branch name]</div><div class="line"></div><div class="line">  // 分支名稱</div></pre></td></tr></table></figure>
+<p>設定完成後，就可以下指令把網誌部署到 Github 上了！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy 或是 hexo d</div></pre></td></tr></table></figure>
+<p>指令說明</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div></pre></td></tr></table></figure>
+<p>清除快取檔案或是已產生的靜態檔案</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="external">Hexo 官方文件</a></p>
+<p><a href="http://kyoyadmoon.github.io/blog/2016/02/21/github-blog-build-with-hexo/" target="_blank" rel="external">DMoon大大的 Hexo 文章</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -348,7 +460,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
@@ -357,10 +469,10 @@
 
           
             <div class="site-state-item site-state-tags">
-              <a href="/blog/tags">
-                <span class="site-state-item-count">1</span>
+              
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">標籤</span>
-              </a>
+              
             </div>
           
 
@@ -403,7 +515,7 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 提供
 </div>
 
 <div class="theme-info">
