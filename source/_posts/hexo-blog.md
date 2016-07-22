@@ -14,6 +14,7 @@ Hexo 是基於 Node.js 網誌框架，文章的寫作只要使用 Markdown 語�
 
 - Node.js
 - Git
+- [Git SSH Key](https://help.github.com/articles/generating-an-ssh-key/)
 
 有上述軟體時，使用 NPM 安裝 Hexo
 
