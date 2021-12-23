@@ -6,3 +6,4 @@ node_modules/
 public/
 .deploy*/
 package-lock.json
+.npm-upgrade.json
